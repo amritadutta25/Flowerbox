@@ -2,8 +2,12 @@
     outline: 2px dotted green;
 }
 
+.row {
+    display: flex
+}
+
 .menu {
-    display: flex;
+    /* display: flex; */
     justify-content:space-around;
     background-color: #92b2ba;
     color: white;
@@ -15,11 +19,11 @@
     font-family: 'DM Sans';
 }
 
-.banner img{
+.banner {
     height: 60vh;
     background-image: url(./images/banner.png);
     background-size: cover;
-    display:flex;
+    /* display:flex; */
     justify-content:flex-end;
     align-items:center
 
@@ -33,6 +37,8 @@
 .heading h1 {
     color: #92b2ba;
     font-size: 50px;
+    /* margin: to reduce gap between the heading.h1 and heading.p */
+    margin: 5px;
 }
 
 .heading p {
@@ -40,4 +46,28 @@
     color: #f0a8bb;
     padding: 5px;
     font-weight: 900;
+    /* marhin-left: to make heading.p start slightly to the right of heading.h1 */
+    margin-left: 40px;
+}
+
+.cards {
+    justify-content: space-around;
+    /* flex-wrap: to move cards to multiple lines */
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    min-width: 150px;
+    height: 350px;
+
+    /* margin top and botton: to add gaps between the cards */
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+img{
+    max-width: 80%;
+    height: auto;
+    margin-right: 100px
 }
