@@ -2,13 +2,19 @@
     outline: 2px dotted green;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 .row {
+    /* flex layout */
     display: flex
 }
 
 .menu {
-    /* display: flex; */
+    /* to give space around each child element inside the parent that has flex display  */
     justify-content:space-around;
+
     background-color: #92b2ba;
     color: white;
 }
@@ -30,6 +36,7 @@
 }
 
 .heading {
+    /* to override display:flex as styled for row selector */
     display: block;
     margin: 0 20px;
 }
@@ -37,8 +44,9 @@
 .heading h1 {
     color: #92b2ba;
     font-size: 50px;
-    /* margin: to reduce gap between the heading.h1 and heading.p */
+    /* margin: to reduce gap between heading.h1 and heading.p */
     margin: 5px;
+    text-shadow: 1px 2px 2px white;
 }
 
 .heading p {
@@ -46,7 +54,7 @@
     color: #f0a8bb;
     padding: 5px;
     font-weight: 900;
-    /* marhin-left: to make heading.p start slightly to the right of heading.h1 */
+    /* margin-left: to make heading.p start slightly to the right of heading.h1 */
     margin-left: 40px;
 }
 
@@ -59,16 +67,67 @@
 .card {
     width: 30%;
     min-width: 150px;
-    height: 100%;
 
     /* margin top and botton: to add gaps between the cards */
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 2px 2px rgb(186, 185, 185);
 }
 
 img {
+    /* to fit img inside each card with width spanning all across the width of it's parent container '.card' */
     width: 100%;
-    height: 70%;
     
 
+}
+
+.desc {
+    /* separating title and price since desc is of flex layout */
+    justify-content:space-between;
+
+    /* adding padding to the left and right side of the title and price */
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 0.9em;
+
+
+}
+
+.desc .title {
+    color: #92b2ba;
+    font-weight: 900;
+
+    /* reducing the gap between the img and title */
+    margin-top: 10px;
+}
+
+.desc .price{
+    background-color: #f0a8bb;
+    color: white;
+
+    /* reducing the gap between the img and title */
+    margin-top: 10px;
+    
+    padding: 2px;
+}
+
+.tags {
+    /* to make the tags inside it start from left side */
+    justify-content: flex-start;
+
+    font-size: 20%;
+    margin-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+.tag {
+    background-color: #eeeeee;
+    font-size: 3em;
+    color: #777777;
+
+    /* add gaps between tags since justify-content: flex-start in .tags adds no space between each tag */
+    margin: 5px
+    
 }
