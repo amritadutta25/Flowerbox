@@ -11,6 +11,8 @@ body {
     display: flex
 }
 
+/* MENU */
+
 .menu {
     /* to give space around each child element inside the parent that has flex display  */
     justify-content:space-around;
@@ -24,6 +26,8 @@ body {
     font-size: 0.9em;
     font-family: 'DM Sans';
 }
+
+/* BANNER */
 
 .banner {
     height: 60vh;
@@ -57,6 +61,8 @@ body {
     /* margin-left: to make heading.p start slightly to the right of heading.h1 */
     margin-left: 40px;
 }
+
+/* CARDS */
 
 .cards {
     justify-content: space-around;
@@ -124,13 +130,14 @@ img {
 
 .tag {
     background-color: #eeeeee;
-    font-size: 3em;
     color: #777777;
 
     /* add gaps between tags since justify-content: flex-start in .tags adds no space between each tag */
     margin: 5px
     
 }
+
+/* FOOTER */
 
 .footer {
     justify-content: center;
@@ -141,18 +148,40 @@ img {
 .social, .service, .info {
     /* add margin to left and right side of each flex item since .footer has justify-content:center to have these 3 child items (social, service, info) at the center of the div */
     margin: 0 50px;
+    width: 13%;
+   
 }
 
 .footer h4 {
     color: #85a5ad;
 }
 
-.footer ul {
-    color: #777777;
-
-}
-
 .footer p {
-    list-style-type: none;
-    font-size: 0.7em;
+    color: #777777;
+    font-size: 0.5em;
 }
+
+.social {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social p {
+    color: #f0a8bb;
+    font-size: 0.5em;
+}
+
+.social img {
+    width: 50%;
+}
+
+.social .icons {
+    justify-content: center;
+    margin: 0 40%
+}
+
+/* .service p, .info p {
+    margin: 10% 0
+} */
+
