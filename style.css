@@ -95,7 +95,7 @@ img {
 }
 
 .desc .title {
-    color: #92b2ba;
+    color: #85a5ad;
     font-weight: 900;
 
     /* reducing the gap between the img and title */
@@ -132,4 +132,27 @@ img {
     
 }
 
+.footer {
+    justify-content: center;
+    background-color: #eeeeee;
 
+}
+
+.social, .service, .info {
+    /* add margin to left and right side of each flex item since .footer has justify-content:center to have these 3 child items (social, service, info) at the center of the div */
+    margin: 0 50px;
+}
+
+.footer h4 {
+    color: #85a5ad;
+}
+
+.footer ul {
+    color: #777777;
+
+}
+
+.footer p {
+    list-style-type: none;
+    font-size: 0.7em;
+}
